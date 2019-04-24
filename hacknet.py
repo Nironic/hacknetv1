@@ -6,44 +6,44 @@ import subprocess
 import sys
 import time
 def banner():
-print(' ██╗  ██╗ █████╗  ██████╗██╗  ██╗     ███╗   ██╗███████╗████████╗' )
-print(' ██║  ██║██╔══██╗██╔════╝██║ ██╔╝     ████╗  ██║██╔════╝╚══██╔══╝')
-print(' ███████║███████║██║     █████╔╝█████╗██╔██╗ ██║█████╗     ██║'   )
-print(' ██╔══██║██╔══██║██║     ██╔═██╗╚════╝██║╚██╗██║██╔══╝     ██║'   )
-print(' ██║  ██║██║  ██║╚██████╗██║  ██╗     ██║ ╚████║███████╗   ██║'	 )
-print(' ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝     ╚═╝  ╚═══╝╚══════╝   ╚═╝'	 )
-print("""
-  ______________________________________________ 
- |Author:Reffy|My VK:https://vk.com/mrgurutopyt |
- |My GitHub:https://github.com/reffyMelon       |
- |The creation date of the script:22.04.2019    |
-  ______________________________________________
-  ########################
-  # Developed for Termux #
-  ########################
-""")  
+	print(' ██╗  ██╗ █████╗  ██████╗██╗  ██╗     ███╗   ██╗███████╗████████╗' )
+	print(' ██║  ██║██╔══██╗██╔════╝██║ ██╔╝     ████╗  ██║██╔════╝╚══██╔══╝')
+	print(' ███████║███████║██║     █████╔╝█████╗██╔██╗ ██║█████╗     ██║'   )
+	print(' ██╔══██║██╔══██║██║     ██╔═██╗╚════╝██║╚██╗██║██╔══╝     ██║'   )
+	print(' ██║  ██║██║  ██║╚██████╗██║  ██╗     ██║ ╚████║███████╗   ██║'	 )
+	print(' ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝     ╚═╝  ╚═══╝╚══════╝   ╚═╝'	 )
+	print("""
+	  ______________________________________________ 
+	 |Author:Reffy|My VK:https://vk.com/mrgurutopyt |
+	 |My GitHub:https://github.com/reffyMelon       |
+	 |The creation date of the script:22.04.2019    |
+	  ______________________________________________
+	  ########################
+	  # Developed for Termux #
+	  ########################
+	""")  
 
 #main-menu
 def main():
-#a lot of print's :)
-banner()
-print("|Thank", end = "")
-time.sleep(0.1)
-print("you", end = "")
-time.sleep(0.4)
-print("for", end = "")
-time.sleep(0.7)
-print("using", end = "")
-time.sleep(0.10)
-print("my", end = "")
-time.sleep(0.11)
-print('script')
-#Device information	
-print('Name of your OS...')
-os.system('uname -o')
-print('Other system info...')
-if os.system("neofetch") == 1:
-	os.system('pkg install neofetch')
+	#a lot of print's :)
+	banner()
+	print("|Thank", end = "")
+	time.sleep(0.1)
+	print("you", end = "")
+	time.sleep(0.4)
+	print("for", end = "")
+	time.sleep(0.7)
+	print("using", end = "")
+	time.sleep(0.10)
+	print("my", end = "")
+	time.sleep(0.11)
+	print('script')
+	#Device information	
+	print('Name of your OS...')
+	os.system('uname -o')
+	print('Other system info...')
+	if os.system("neofetch") == 1:
+		os.system('pkg install neofetch')
 print('Menu:')
 print('$##########################$')
 print('1)Gratitudes')
@@ -55,6 +55,7 @@ print('6)IP Lookup')
 print('7)Quit')
 hpt = raw_input("[$hpt]>")
 def restart():
+	pass
 	#copied from https://github.com/Gameye98/Lazymux
 	python = sys.executable
 	os.execl(python, python, * sys.argv)
